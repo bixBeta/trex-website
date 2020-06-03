@@ -1,0 +1,55 @@
+HT single-cell analysis (eg 10x) is different than bulk profiling
+     analysis methods are in rapid development cycles, changing/improving fast
+     require methods that can handle sparse dataset with varying depth of coverage per cell
+	 a zero count for a gene could either mean that the gene was not being expressed or the transcripts were just not detected.
+
+	The complexity of analysis of scRNA-seq data involves:
+        * Large volume of data
+        * Low depth of sequencing per cell (often detecting only 10-50% of the transcriptome per cell) 
+
+        * Technical variability across cells/samples
+                * Cell-specific capture efficiency: Different cells will have differing numbers of transcripts captured resulting in differences in sequencing depth (e.g. 10-50% of transcriptome).
+                * Library quality: Degraded RNA, low viability/dying cells, lots of free floating RNA, poorly dissociated cells, and inaccurate quantitation of cells can result in low quality metrics
+                * Amplification bias: During the amplification step of library preparation, not all transcripts are amplified to the same level.
+                * Batch effects: Batch effects are a significant issue for scRNA-Seq analyses, since you can see significant differences in expression due solely to the batch effect.
+
+        * Biological variability across cells/samples 
+                * Transcriptional bursting: Gene transcription is not turned on all of the time for all genes. Time of harvest will determine whether gene is on or off in each cell.
+                * Varying rates of RNA processing: Different RNAs are processed at different rates.
+                * Continuous or discrete cell identities (e.g. the pro-inflammatory potential of each individual T cell): Continuous phenotypes are by definitition variable in gene expression, and separating the continuous from the discrete can sometimes be difficult.
+                * Environmental stimuli: The local environment of the cell can influence the gene expression depending on spatial position, signaling molecules, etc.
+                * Temporal changes: Fundamental fluxuating cellular processes, such as cell cycle, can affect the gene expression profiles of individual cells.
+
+
+10x cellranger -- only takes you so far
+     mkfastq: fastq distribution (BRC Genomics Facility)
+     count: individual sample mapping (count matrix) and QC check (html report, loupe)
+     aggr: nice clustering but downsampling, no DE within cluster/between groups
+ 
+R packages -- heavy lifting
+     Seurat, Monocle
+     continual development improving algorithms and options
+     lots of normalization (batch effects, cell cycle,...)
+     DE between cluster (marker genes), within cluster between groups (name?)
+ 
+Considerations for sparse dataset
+    ~2,000 genes detected per cell, but not the same genes across cells! even within cluster
+    zero counts should not be interpreted as not expressed (detection <> expression)
+    requires analysis methods that handle high amount of 'missing data'
+    sequencing depth and # genes detected is variable across cells, can drive clustering
+ 
+Elbow Plot
+The elbow plot is helpful when determining how many PCs we need to capture the majority of the variation in the data. e.g. we  can quantitatively determine the point where the percent change in variation between the consecutive PCs is less than 0.1% or any cutoff desired. 
+
+
+Normalization is critical
+
+ 
+Cluster classification/ID
+     new tools all the time
+     benchmark to existing data (single-cell or bulk gold-standard cell type specific profiles)
+ 
+ 
+Stats for current tools available  for scRNA-seq :
+https://www.scrna-tools.org/analysis
+
