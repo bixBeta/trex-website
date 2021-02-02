@@ -197,14 +197,20 @@ Once you click on the OH reservation, click on the link to ‘Go to appointment 
 									<div data-netlify-recaptcha="true"></div>
 									<br>
 									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
+										<li><input type="submit" value="Send"  id="myButton" class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
 									</ul>
 								</form>
 							</section>
-
+							<script src="https://unpkg.com/@popperjs/core@2"></script>
+							<script src="https://unpkg.com/tippy.js@6"></script>
+							<script >
+							tippy('#myButton', {
+											content: 'Please wait for the confirmation screen to open in a new tab. If it does not appear then please try again or use a different browser.',
+										});
+							</script>
 
 							<ul class="copyright">
-								<li>&copy; TREx 2020. All rights reserved</li>
+								<li>&copy; TREx 2021. All rights reserved</li>
 
 									<li class="icon solid fa-home">   526 Campus Road #333 Ithaca, NY 14853-2703</li>
 									<li class="icon solid fa-phone">  (607) 254-4834</li>
