@@ -18,11 +18,12 @@
 
 	<div class="alert">
 				<!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
-				The TREx Lab is currently OPEN and is taking sample submissions by appointment only. <br />Please review our updated <a class="customHyper" href="announcements.html"> <b><em>SAMPLE SUBMISSION GUIDELINES</em> </b> </a>  for more information.<br />
+				<b> TREx is now part of Biotechnology Resource Center. Please <a class="customHyper" href="https://www.biotech.cornell.edu/core-facilities-brc/facilities/transcriptional-regulation-expression-facility-trex">  click here </a> to visit the BRC affiliated site. </b> <br/>
+The TREx Lab is currently OPEN and is taking sample submissions by appointment only. <br />Please review our NEW <a class="customHyper" href="announcements.html"> <b><em>SAMPLE SUBMISSION GUIDELINES</em> </b> </a>  for more information or <a class="customHyper" target="_blank" href="https://cores.lifesciences.cornell.edu/userdev/placeorder.php"> <b> <em> Click Here </em></b> </a> to place an order.<br />
 				To schedule a virtual meeting and or get in touch via e-mail: <a class="customHyper" href="home.html#Virtual"> <b><em>Click Here</em> </b> </a> <br />
 
 
-				<a class="customHyper" href="https://www.cornell.edu/coronavirus/" target="_blank"> <b> Novel Coronavirus (COVID-19) Resources and Updates </b> </a>
+				<!-- <a class="customHyper" href="https://www.cornell.edu/coronavirus/" target="_blank"> <b> Novel Coronavirus (COVID-19) Resources and Updates </b> </a> /-->
 
 	</div>
 
@@ -31,7 +32,7 @@
 			/* The alert message box */
 			.alert {
 				padding: 20px;
-				background-color: #fcbe40; /* Red */
+				background-color: #8ecae6; /* Red */
 				color: black;
 				margin-bottom: 15px;
 			}
@@ -70,10 +71,10 @@
 						<nav id="menu">
 							<h2>Menu</h2>
 							<ul>
-								<li><a href="index.html">Home</a></li>
+								<li><a href="index.html">Home</a></li> <li><a href="home.html">About Us</a></li>
 								<li><a href="services.html">Service & Pricing </a></li>
 								<li><a href="analysis.html">Analysis</a></li>
-								<li><a href="forms.html">Forms & Resources </a></li>
+								<li><a href="forms.html">Resources </a></li>
 								<li><a href="announcements.html">Announcements </a></li>
 								<li><a href="faqs.html">FAQs </a></li>
 
@@ -87,26 +88,33 @@
 							<h1>Transcriptional Regulation & Expression Facility</h1>
 							<hr>
 							<h1>Services & Pricing :</h1>
-
+							<p> To place an order, please <a class="customHyper" target="_blank" href="https://cores.lifesciences.cornell.edu/userdev/placeorder.php"> click here </a> to lauch the sample submision portal <i> (BRC account required)</i>.</p>
 							<section>
-								<blockquote><h2>2021 Services and Pricing </h2>
+<div class="row">
+<div class="col-6 col-12-medium">
+								<blockquote>
+										<b> Pricing Info: </b> <br>
 
-								<a  href="#t3"> ATAC-Seq </a> <br>
-								<a  href="#t1"> RNA-Seq </a> <br>
-								<a  href="#t2"> smRNA-Seq </a> <br>
-								<a href="#req"> RNA Input Requirements</a><br>
-								<a href="#data-dist"> Data Distribution </a><br>
-								<a href="#cp"> Custom Projects </a><br>
+								<a  href="https://www.biotech.cornell.edu/core-facilities-brc/services/rna-seq-standard-package" target="_blank"> RNA-Seq </a> <br>
+								<a  href="https://www.biotech.cornell.edu/core-facilities-brc/services/small-rna-sequencing-standard-package" target="_blank"> smRNA-Seq </a> <br>
+								<a  href="https://www.biotech.cornell.edu/core-facilities-brc/services/atac-seq-standard-package" target="_blank"> ATAC-Seq </a> <br>
 
-
+</div>
 								</blockquote>
 
+<div class="col-6 col-12-medium">
+								<blockquote>
+										<b> General guidelines and Other info:</b> <br>
+									<a href="#req"> RNA Input Requirements</a><br>
+									<a href="#data-dist"> Data Distribution </a><br>
+									<a>&nbsp</a>
+									<!-- <a href="#cp"> Custom Services </a><br> -->
+								</blockquote>
+</div>
+</div>
 
 
-<br>
-<br>
-
-								<div class="box alt">
+								<!-- <div class="box alt">
 								<div class="row gtr-uniform">
 								<div id="t3" class="col-12"><span class="image fit"><img  src="images/t3.jpeg" alt="" /></span></div>
 								</div>
@@ -119,23 +127,95 @@
 									<div class="box alt">
 									<div class="row gtr-uniform">
 									<div id="t2" class="col-12"><span class="image fit"><img src="images/t2.jpeg" alt="" /></span></div>
-									</div>
+									</div> -->
+
+
+<hr>
+
+<h2 id="rna-seq"> RNA-Seq Standard package </h2>
+<ul>
+	<li><b>Sample Submission:</b> 10ng — 1ug purified RNA (see <a href="#req"> RNA input requirements</a>).
+		'Bioanalyzer QC' is highly recommended. <br>Contact us for information about RNA QC options.</li>
+
+	<li><b>Library Preparation:</b> NEBNext Ultra II [Directional] RNA
+		PolyA* enrichment (included) or ribosomal RNA depletion (extra cost; <br>we can deplete animal and/or bacterial rRNA).<br>
+		Directional (stranded, default) or non-directional (non-stranded, recommended for input < 20ng total RNA).</li>
+
+	<li><b>Sequencing:</b> Minimum 20M raw reads.
+				Deeper sequencing is available on request (extra cost).</li>
+
+
+	<li><b>Standard analysis:</b>
+		Read preprocessing, mapping to reference genome, data QC reports including mapping rate and sample
+	 	clustering analyses, differential gene expression analysis (DESeq2).
+	  Alternative analysis modes including pathogen discovery are also available; contact us for information.
+</li>
+<br>
+To place an order, please <a class="customHyper" target="_blank" href="https://cores.lifesciences.cornell.edu/userdev/placeorder.php"> click here </a> to lauch the sample submision portal <i> (BRC account required)</i>.</p>
+
+
+</ul>
+
+<hr>
+<h2 id="smrna-seq"> Small-RNA-Seq Standard package </h2>
+<ul>
+	<li><b>Sample Submission:</b> 100ng - 1ug purified RNA (lower input is sufficient for cell-free RNA; see <a href="#req"> RNA input requirements</a>).<br>
+				'Bioanalyzer QC' is highly recommended; contact us for information about RNA QC options.
+
+	<li><b>Library Preparation:</b> NEBNext Small RNA. </li>
+	<li><b>Sequencing:</b>
+		Minimum 10M raw reads.
+		Deeper sequencing is available on request (extra cost).
+	</li>
+
+
+	<li><b>Standard analysis:</b>
+		Read preprocessing, quantification of annotated microRNAs (miRdeep2 using miRBase annotations), data QC
+		reports including total microRNA counts and sample clustering analyses, differential microRNA detection analysis (DESeq2).<br>
+		<i>Optional: </i> Reads can be mapped to a reference genome on request.
+</li>
+<br>
+To place an order, please <a class="customHyper" target="_blank" href="https://cores.lifesciences.cornell.edu/userdev/placeorder.php"> click here </a> to lauch the sample submision portal <i> (BRC account required)</i>.</p>
+
+
+</ul>
+
+
+<hr>
+<h2 id="atac-seq"> ATAC-Seq Standard package </h2>
+<ul>
+	<li><b>Sample Submission:</b> At least 25k permeabalized nuclei, frozen in storage media.
+Please contact us for reccommended sample preparation protocol.</li>
+
+	<li><b>Library Preparation:</b>Illumina TDE1 enzyme. </li>
+	<li><b>Sequencing:</b>
+		Minimum 20M (PE 2X150) raw reads.
+		Deeper sequencing is available and may be needed to attain recommended coverage (extra cost).
+	</li>
+
+
+	<li><b>Standard analysis:</b>
+		Read preprocessing, mapping to reference genome, peak calling and annotation, data QC reports including mapping/duplication rates and "fraction of reads in peaks" (FRIP), differential accessibility analysis (DESeq2).
+		Motif enrichment analysis is available upon request.
+</li>
+<br>
+To place an order, please <a class="customHyper" target="_blank" href="https://cores.lifesciences.cornell.edu/userdev/placeorder.php"> click here </a> to lauch the sample submision portal <i> (BRC account required)</i>.</p>
+
+
+</ul>
 
 
 
+<hr>
 
-
-
-
-
-<blockquote><h2 id="req">RNA Input Requirements </h2></blockquote>
+<h2 id="req">RNA Input Requirements </h2> <br>
 <div class="box alt">
 <div class="row gtr-uniform">
-<div  class="col-12"><span class="image fit"><img src="images/rna-input.png" alt="" /></span></div>
+<!-- <div  class="col-12"><span class="image fit"><img src="images/rna-input.png" alt="" /></span></div> -->
 
 </div>
-								<!-- <table >
-										<blockquote><h2 id="req">RNA Input Requirements </h2></blockquote>
+								<table >
+										<!-- <blockquote><h2 id="req">RNA Input Requirements </h2></blockquote> -->
 										<tbody>
 
 											<tr>
@@ -153,19 +233,16 @@
 												</td>
 												<td>
 													≥ 500ng total RNA, RIN > 8
-													<br> ≥ 2.5µg total RNA for standard protocol or
-													<br> 100ng total RNA for low-input protocol
-													<br> and rRNA depletion kit (if other than RiboZero
-													<br> Gold HMR, bacteria, or epidemiology)
+													<br> 100ng - 1µg total RNA
 												</td>
 												<td>
 													10ng total RNA, RIN > 7
-													<br> 100ng total RNA
+													<br> 10ng total RNA
 												</td>
 
 											<tr>
 											<tr>
-												<td>RNAseq - standard </td>
+												<td>RNAseq - non-directional </td>
 												<td>polyA+
 													<br>
 													<br> rRNA-depleted
@@ -179,7 +256,7 @@
 													1ng total RNA, RIN > 8
 													<br>
 													<br>
-													same as directional RNAseq
+													10ng total RNA
 
 												</td>
 
@@ -195,7 +272,7 @@
 												</td>
 												<td>
 													100ng total RNA or
-													<br> 10pg cell-free RNA (eg serum)
+													<br> 10pg cell-free RNA (e.g. serum)
 
 												</td>
 
@@ -209,30 +286,44 @@
 
 
 
-									</table> -->
+									</table>
+
+<hr>
+
+<h2 id="cp">Custom Services</h2>
+
+	<p> Custom services are available on a limited basis for additional cost. Please contact us for more information.
+
+		<ul>
+			<li>DNase Treatment and RNA Cleanup</li>
+			<li>Nanodrop/Qubit Quantification</li>
+			<li>RNA QC on Fragment Analyzer</li>
+		</ul>
+
+	</p>
+
+<hr>
+																	<h2 id="data-dist">Data Distribution</h2>
+
+																		<ul>
+																			<li>Data analysis reports (html and xlsx formats) including data QC, raw count tables, and differential expression analysis results will be distributed when a project is complete via Box, Google Drive, and/or email. </li>
+																			<li>Large data files are available on request and will be distributed via Globus or on the BRC Bioinformatics network (user account required).</li>
+																			<li>Raw reads (fastq files) will be archived for at least 5 years by the TREx Facility.</li>
+																			<li>Mapped reads (bam files) will be retained only as required for standard analysis and will be purged on a quarterly basis.</li>
+																			<li>The first distribution of large data files is included in the standard package rates. <br> Repeat requests for distribution of large data files may incur additional fees.</li>
+</ul>
 
 
 
-																		<blockquote><h2 id="data-dist">Data Distribution</h2>
-
-																			<p> Data analysis reports (html and xlsx formats) including data QC, raw count tables, and differential expression analysis results will be distributed when a project is complete via Box, Google Drive, and/or email. <br />
-
-																				Large data files are available on request and will be distributed via Globus or on the BRC Bioinformatics network (user account required).<br />
-																				Raw reads (fastq files) will be archived for at least 5 years by the TREx Facility.<br />
-																				Mapped reads (bam files) will be retained only as required for standard analysis and will be purged on a quarterly basis.<br />
-																				The first distribution of large data files is included in the standard package rates. Repeat requests for distribution of large data files may incur additional fees.
 
 
 
 
 
-																			</p>
 
 
 
 
-
-																		</blockquote>
 
 
 
@@ -241,24 +332,13 @@
 									</div>
 
 
-									<blockquote><h2 id="cp">Custom Projects</h2>
-
-										<p> Custom projects are available on a limited basis and require pre-approval from the Director of the TREx Facility
-
-											<p>
-
-											Custom Lab Work $45 per hour.<br>
-											Custom Analysis $125 per hour.
-											</p>
-
-
-										</p>
 
 
 
 
 
-									</blockquote>
+
+
 								</section>
 
 						</div>
@@ -270,7 +350,7 @@
 								<section>
 								<h2> Get in touch</h2>
 
-								<form data-netlify-recaptcha="true" data-netlify="true" action="success.html">
+								<form data-netlify-recaptcha="true" data-netlify="true" action="success.html" name="form 1" method="POST">
 
 
 									<div class="fields">
@@ -287,7 +367,7 @@
 									<div data-netlify-recaptcha="true"></div>
 									<br>
 									<ul class="actions">
-										<li><input type="submit" value="Send" id="myButton"  class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
+										<li><input type="submit" value="Send" id="myButton"  class="primary"  rel="noopener" onClick="window.location.reload();"/></li>
 									</ul>
 								</form>
 							</section>
@@ -295,7 +375,7 @@
 							<script src="https://unpkg.com/tippy.js@6"></script>
 							<script >
 							tippy('#myButton', {
-											content: 'Please wait for the confirmation screen to open in a new tab. If it does not appear then please enable pop-ups in your browser settinngs or use a different browser.',
+											content: 'Please wait for the confirmation screen to appear in the same tab. If it does not appear then please enable pop-ups in your browser settings or contact via trex_info@cornell.edu.',
 										});
 							</script>
 							<ul class="copyright">
@@ -303,6 +383,7 @@
 
 									<li class="icon solid fa-home">   526 Campus Road #333 Ithaca, NY 14853-2703</li>
 									<li class="icon solid fa-phone">  (607) 254-4834</li>
+<li class="icon solid fa-envelope">  trex_info@cornell.edu</li>
 
 
 							</ul>

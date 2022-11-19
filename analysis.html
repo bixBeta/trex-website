@@ -17,11 +17,12 @@
 
 	<div class="alert">
 				<!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> -->
-				The TREx Lab is currently OPEN and is taking sample submissions by appointment only. <br />Please review our updated <a class="customHyper" href="announcements.html"> <b><em>SAMPLE SUBMISSION GUIDELINES</em> </b> </a>  for more information.<br />
+				<b> TREx is now part of Biotechnology Resource Center. Please <a class="customHyper" href="https://www.biotech.cornell.edu/core-facilities-brc/facilities/transcriptional-regulation-expression-facility-trex">  click here </a> to visit the BRC affiliated site. </b> <br/>
+				The TREx Lab is currently OPEN and is taking sample submissions by appointment only. <br />Please review our NEW <a class="customHyper" href="announcements.html"> <b><em>SAMPLE SUBMISSION GUIDELINES</em> </b> </a>  for more information or <a class="customHyper" target="_blank" href="https://cores.lifesciences.cornell.edu/userdev/placeorder.php"> <b> <em> Click Here </em></b> </a> to place an order.<br />
 				To schedule a virtual meeting and or get in touch via e-mail: <a class="customHyper" href="home.html#Virtual"> <b><em>Click Here</em> </b> </a> <br />
 
 
-				<a class="customHyper" href="https://www.cornell.edu/coronavirus/" target="_blank"> <b> Novel Coronavirus (COVID-19) Resources and Updates </b> </a>
+				<!-- <a class="customHyper" href="https://www.cornell.edu/coronavirus/" target="_blank"> <b> Novel Coronavirus (COVID-19) Resources and Updates </b> </a> /-->
 
 	</div>
 
@@ -30,7 +31,7 @@
 			/* The alert message box */
 			.alert {
 			  padding: 20px;
-			  background-color: #fcbe40; /* Red */
+			  background-color: #8ecae6; /* Red */
 			  color: black;
 			  margin-bottom: 15px;
 			}
@@ -68,10 +69,10 @@
 					<nav id="menu">
 						<h2>Menu</h2>
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Home</a></li> <li><a href="home.html">About Us</a></li>
 							<li><a href="services.html">Service & Pricing </a></li>
 							<li><a href="analysis.html">Analysis</a></li>
-							<li><a href="forms.html">Forms & Resources </a></li>
+							<li><a href="forms.html">Resources </a></li>
 							<li><a href="announcements.html">Announcements </a></li>
 							<li><a href="faqs.html">FAQs </a></li>
 
@@ -96,7 +97,7 @@
 
 
 
-							<h4> Example Reports </h4>
+							<h4> Example RNA Seq Reports </h4>
 
 							<li><a href="files/Alignment_Summary.html" target="_blank" >Mapping Summary</a></li>
 							<li><a href="files/QC.html" target="_blank" > Analysis QC Plots and Clustering</a></li>
@@ -118,7 +119,7 @@
 								<h2> Get in touch</h2>
 
 
-								<form data-netlify-recaptcha="true" data-netlify="true" action="success.html">
+								<form data-netlify-recaptcha="true" data-netlify="true" action="success.html" name="form 1" method="POST">
 
 
 									<div class="fields">
@@ -135,7 +136,7 @@
 									<div data-netlify-recaptcha="true"></div>
 									<br>
 									<ul class="actions">
-										<li><input type="submit" value="Send" id="myButton" class="primary" formtarget="_blank" rel="noopener" onClick="window.location.reload();"/></li>
+										<li><input type="submit" value="Send" id="myButton" class="primary"  rel="noopener" onClick="window.location.reload();"/></li>
 									</ul>
 								</form>
 							</section>
@@ -143,7 +144,7 @@
 							<script src="https://unpkg.com/tippy.js@6"></script>
 							<script >
 							tippy('#myButton', {
-											content: 'Please wait for the confirmation screen to open in a new tab. If it does not appear then please enable pop-ups in your browser settinngs or use a different browser.',
+											content: 'Please wait for the confirmation screen to appear in the same tab. If it does not appear then please enable pop-ups in your browser settings or contact via trex_info@cornell.edu.',
 										});
 							</script>
 
@@ -152,6 +153,7 @@
 
 									<li class="icon solid fa-home">   526 Campus Road #333 Ithaca, NY 14853-2703</li>
 									<li class="icon solid fa-phone">  (607) 254-4834</li>
+<li class="icon solid fa-envelope">  trex_info@cornell.edu</li>
 
 
 							</ul>
